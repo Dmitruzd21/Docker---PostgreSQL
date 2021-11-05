@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgresql:
+    image:postgres:12 - alpine
+    ports:
+      - '5555:5555'
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=21uzd
+      - POSTGRES_USER=dmitry
+      - POSTGRES_DB=postgresql
